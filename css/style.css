@@ -1,9 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
   background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 .container {
@@ -184,16 +195,22 @@ body {
   font-weight: 700;
 }
 
-.product__top {
+.product__top,
+.about__top,
+.contacts__top {
   height: 550px;
   background-color: #111518;
 }
 
-.product__inner {
+.product__inner,
+.about__inner,
+.contacts__inner {
   margin-top: -400px;
 }
 
-.product__title {
+.product__title,
+.about__title,
+.contacts__title {
   text-align: center;
   color: #fff;
   font-size: 64px;
@@ -244,7 +261,7 @@ body {
   height: 80px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
@@ -253,7 +270,7 @@ body {
   position: absolute;
   display: block;
   inset: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   transition: background 0.5s ease;
 }
 
@@ -329,4 +346,43 @@ body {
 .product__next a {
   color: #fc7926;
   text-decoration: underline;
+}
+
+.about {
+  padding-bottom: 75px;
+}
+
+.about__box {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about__img {
+  margin: 0 auto 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.about__image {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.about__text.about__text--last {
+  margin-bottom: 0;
+}
+
+.about__text {
+  margin-bottom: 30px;
+  line-height: 1.3;
 }
