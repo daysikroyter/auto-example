@@ -12,3 +12,11 @@ document.querySelectorAll(".tab").forEach((tab) => {
     document.getElementById(targetId)?.classList.add("tabs-content--active");
   });
 });
+
+function handleOrientationChange() {
+  if (!isMenuClosed) {
+    burgerTime();
+  }
+}
+
+window.addEventListener("resize", handleOrientationChange);
