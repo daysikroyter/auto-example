@@ -26,11 +26,13 @@ const McBar1 = McButton.querySelector("b:nth-child(1)");
 const McBar2 = McButton.querySelector("b:nth-child(2)");
 const McBar3 = McButton.querySelector("b:nth-child(3)");
 const menu = document.querySelector('.menu__list');
+const body = document.querySelector('body');
 
 let isActive = false;
 
 McButton.addEventListener("click", () => {
   menu.classList.toggle('menu__list--active')
+  body.classList.toggle('locked')
   isActive = !isActive;
   McButton.classList.toggle("active");
 
