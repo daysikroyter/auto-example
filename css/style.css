@@ -280,7 +280,7 @@ body.locked {
 }
 
 .product__container img {
-  height: 600px;
+  height: 500px;
   width: 100%;
   object-fit: cover;
 }
@@ -297,6 +297,7 @@ body.locked {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
+  overflow-x: auto;
 }
 
 .product__tab {
@@ -540,7 +541,13 @@ body.locked {
     padding: 50px 0;
   }
 
-  .offers__text {
+  .about,
+  .contacts {
+    padding-bottom: 50px;
+  }
+
+  .offers__text,
+  .product__next {
     margin-bottom: 50px;
   }
 
@@ -564,7 +571,8 @@ body.locked {
 
 @media (max-width: 860px) {
   .about__img,
-  .contacts__img {
+  .contacts__img,
+  .product__container img {
     height: 400px;
   }
 
@@ -684,7 +692,8 @@ body.locked {
   }
 
   .about__img,
-  .contacts__img {
+  .contacts__img,
+  .product__container img {
     height: 350px;
   }
 
@@ -707,6 +716,14 @@ body.locked {
   .contacts__form-title {
     font-size: 24px;
   }
+
+  .product__elements {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product__next {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -718,14 +735,16 @@ body.locked {
   }
 
   .about__img,
-  .contacts__img {
+  .contacts__img,
+  .product__container img {
     height: 300px;
   }
 }
 
 @media (max-width: 480px) {
   .about__img,
-  .contacts__img {
+  .contacts__img,
+  .product__container img {
     height: 250px;
   }
 
@@ -758,7 +777,8 @@ body.locked {
 
 @media (max-width: 430px) {
   .about__img,
-  .contacts__img {
+  .contacts__img,
+  .product__container img {
     height: 200px;
   }
 
@@ -777,7 +797,8 @@ body.locked {
 
 @media (max-width: 370px) {
   .about__img,
-  .contacts__img {
+  .contacts__img,
+  .product__container img {
     height: 150px;
   }
 
