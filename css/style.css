@@ -585,7 +585,7 @@ body.locked {
     transform: translate(0, -50%);
     top: 50%;
     right: 0;
-    transition: opacity 0.3s ease, font-size 0.5s ease, width 0.5s ease,
+    transition: opacity 1s ease, font-size 0.5s ease, width 0.5s ease,
       height 0.5s ease;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.9);
@@ -594,6 +594,7 @@ body.locked {
     font-size: 0;
     width: 100%;
     opacity: 0;
+    padding-top: 78px;
   }
 
   .menu__list--active {
@@ -623,5 +624,11 @@ body.locked {
 @media (max-width: 560px) {
   .hero__title {
     font-size: 32px;
+  }
+}
+
+@media (max-height: 480px) {
+  .hero__text {
+    display: none;
   }
 }
