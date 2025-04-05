@@ -600,7 +600,7 @@ body.locked {
   .menu__list--active {
     width: 100%;
     opacity: 1;
-    height: 100vh;
+    height: 100%;
     font-size: 28px;
   }
 
